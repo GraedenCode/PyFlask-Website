@@ -1,0 +1,10 @@
+# Items that go in here
+# CSS
+# JavaScript
+# Images
+
+# Use inside body paragraph
+# <script
+#   type="text/javascript"
+#   src="{{ url_for('static', filename='index.js') }}"
+# ></script>
