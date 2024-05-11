@@ -22,12 +22,12 @@ def sign_up():
 
         # sign-up authentication
         if len(email) < 4:
-            flash("email must @", category='fail')
+            flash("email must include an @", category='fail')
         elif len(firstName) < 2:
             flash("name must be longer than 1 character", category='fail')
         elif password1 != password2:
             flash("Passwords do not match", category='fail')
-        elif password1 < 7:
+        elif len(password1) < 7:
             flash("Password is too short", category='fail')
         else:
             flash("Account Created!", category='success')
